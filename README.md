@@ -18,7 +18,7 @@ Este projeto é uma página simples e responsiva desenvolvida para servir como m
 ## 📂 Como executar o projeto
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/crusaderMD/perfil-dev
 2. Acesse a pasta do projeto:
    ```bash
    cd nome-do-repositorio
