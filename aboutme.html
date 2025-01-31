@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/sobremim.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="aboutme.html">Sobre mim</a>
+        </nav>
+    </header>
+    <main class="sobremim">
+        <section class="sobremim__texto">
+            <h1 class="sobremim__texto__titulo">Sobre mim</h1>
+            <p class="sobremim__texto__paragrafo">Olá! Meu nome é Luiz e sou um desenvolvedor em constante aprendizado.
+                Atualmente, estou explorando o mundo da programação com <strong>C# e .Net</strong>, me aventurando na criação de projetos
+                que misturam lógica, criatividade e um toque de desafio.
+                <br>
+                <br>
+                Curso Análise e Desenvolvimento de Sistemas (ADS) e também estudo front-end (<strong>HTML, CSS e JavaScript</strong>).
+                Comecei minha jornada na programação movido pela curiosidade, e cada passo nessa jornada só me deixa
+                mais motivado a entender como tudo funciona. Hoje, estou sempre buscando aprimorar minhas habilidades,
+                seja criando aplicações, resolvendo bugs ou descobrindo novas tecnologias.
+                <br>
+                <br>
+                Além do código, também sou apaixonado por contar histórias e criar mundos, tanto que estou desenvolvendo
+                o roteiro de um jogo chamado As Relíquias do Mar Antigo, onde misturo aventura, mistério e um toque de
+                horror cósmico.
+                <br>
+                <br>
+                No momento, estou focado em crescer como dev e aberto a novas oportunidades, desafios e conexões. Se
+                quiser trocar uma ideia sobre desenvolvimento, jogos ou qualquer outra nerdice, é só me chamar!
+            </p>
+        </section>
+        <img class="sobremim__imagem" src="./assets/luiz-sobre_mim.png"
+            alt="Foto em preto e branco do Luiz segurando um teclado">
+    </main>
+    <footer class="rodape">
+        <p>&copy; <span id="ano"></span> Desenvolvido por Luiz R. Bortolotti Jr. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

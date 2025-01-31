@@ -1,0 +1,210 @@
+/* Import de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100..900&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box; /* Largura e altura dos elementos passam a incluir o padding e a borda */
+}
+
+/* Variáveis das cores e fontes utilizadas */
+:root {
+  --text-color: #FFEB00;
+  --text-color-secondary: #344CB7;
+  --link-text-color: #000957;
+  --stroke-color: rgba(255, 235, 0, 0.5);
+  --surface-color: rgba(255, 235, 0, 0.1);
+  --hover-color: rgba(255, 235, 0, 0.05);
+  
+  --font-main: "Krona One", serif;
+  --font-secondary: "Montserrat", serif;
+}
+
+body {
+  /*background-image: url(assets/bgmod.png); /* Caminho da imagem de fundo */
+  background: linear-gradient(#000957, #344CB7);
+  background-attachment: fixed; /* Imagem de fundo permanece fixa */
+  background-repeat: no-repeat; /* Imagem de fundo não repete */
+  background-size: cover; /*  Garante que a imagem de fundo cubra todo o elemento */
+  background-position: top center; /* Posicionamento da imagem de fundo */
+  color: var(--text-color); /* Cor do texto no elemento */
+}
+
+/* Referente ao elemento <header> */
+.cabecalho__menu{
+  background-color: var(--surface-color);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 1%;
+}
+
+.cabecalho__menu__link{
+  color: var(--text-color);
+  text-decoration: none;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 1.187rem;
+  transition: 0.3s ease, transform 0.3s ease;
+}
+
+.cabecalho__menu__link:hover {
+  transform: scale(1.10);
+  cursor: pointer;
+}
+
+/* Referente ao elemento <main> */
+.apresentacao {
+  padding: 4% 10%;
+  display: flex; /* Flexbox */
+  flex-direction: column;
+  align-items: center; /* Alinhamento dos itens dentro do contêiner flexível */
+  justify-content: space-between; /* Distribui uniformemente os itens ao longo do eixo principal do flexbox */
+  gap: 30px; /* Espaçamento entre os itens do flexbox */ 
+}
+
+/* Referente ao primeiro <div> */
+.perfil {
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Direcão dos itens dentro do flexbox*/
+  align-items: center;
+  gap: 20px; /* Espaçamento entre os itens do flexbox */  
+}
+
+.perfil__avatar {
+  width: 50%;  
+}
+
+/* Referente ao elemento <p> */
+.perfil__nome {
+  text-align: center; 
+  font-size: 1.25rem;
+  font-family: var(--font-main);
+}
+
+/* Referente ao segundo <div> */
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+}
+
+/* Referente aos elemento ancora <a> */
+.links__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--surface-color); /* Cor de fundo do elemento */
+  width: 220px; /* Tamanho do elemento */
+  text-align: center;
+  border-radius: 16px; /* Arredondamento das bordas */
+  border: 1px solid var(--stroke-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 8px;
+  padding: 16px 0;
+  font-family: var(--font-secondary);
+  text-decoration: none; /* Remoção do sublinhado dos links */
+  color: var(--link-text-color);
+  transition: 0.3s ease, transform 0.3s ease; /* Propriedade que controla animações suaves em elementos quando seu estilo muda */ 
+}
+
+.links__link:hover {
+  background-color: var(--hover-color); /* Muda a cor de fundo no hover */
+  color: var(--text-color); /* Muda a cor do texto no hover */
+  transform: scale(1.05); /* Aumenta o tamanho levemente */
+  cursor: pointer; /* Mostra o ícone de "mãozinha" */
+}
+
+.links__link img {
+  width: 30px;
+  height: 30px;
+}
+
+.logo__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;  
+}
+
+.logo__links__link {
+  transition: 0.3s ease, transform 0.3s ease;
+}
+
+.logo__links__link:hover {
+  transform: scale(1.5);
+}
+
+.logo__links img{
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+.rodape{
+  text-align: center;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  padding: 24px;
+}
+
+/* Daqui pra baixo é referente ao aboutme */
+
+.sobremim {  
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  gap: 20px;  
+}
+
+.sobremim__texto { 
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;  
+}
+
+.sobremim__texto__titulo{
+  margin-top: 5% ;
+  font-family: var(--font-main);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.sobremim__texto__paragrafo{
+  padding: 0% 5%;
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+}
+
+.sobremim__imagem {
+  margin-top: 50px; 
+  width: 250px;  
+}
+
+@media (max-width: 1000px) {
+  .sobremim {
+    flex-direction: column-reverse;
+  }
+
+  .sobremim__texto {
+    width: auto;
+    gap: 15px;
+  }
+
+  .sobremim__texto__titulo {
+    font-size: 1.2rem;
+  }
+
+  .sobremim__texto__paragrafo {
+    padding: 0;
+    margin: 1% 10%;
+  }
+}

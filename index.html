@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Dev</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="aboutme.html">Sobre mim</a>
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <div class="perfil">
+            <img class="perfil__avatar" src="assets/luiz_avatar.png" alt="Foto de Luiz olhando para frente">
+            <p class="perfil__nome">Luiz R. Bortolotti Jr.</p>
+        </div>
+        <div class="links">
+            <a class="links__link" href="https://github.com/crusaderMD" target="_blank">
+                <img src="./assets/icone-github-jaune.png" alt="Logo do GitHub em amarelo">
+                Github                
+            </a>
+            <a class="links__link" href="https://www.linkedin.com/in/luiz-roberto-bortolotti-junior/" target="_blank">
+                <img src="./assets/icone-linkedin-ronde-jaune.png" alt="Logo do LinkedIn em amarelo">
+                LinkedIn
+            </a>
+        </div>
+        <div class="logo__links">
+            <a class="logo__links__link" href="https://wa.me/5519995554682?text=Olá!%20Seja%20muito%20bem-vindo!%20Envie%20sua%20mensagem%20e%20assim%20que%20possível,%20responderei%20com%20todo%20carinho.%20Obrigado%20pelo%20contato!" target="_blank">
+                <img src="./assets/whats_logo.png" alt="Logo do whatsapp em amarelo">
+            </a>
+            <a class="logo__links__link" href="https://www.youtube.com/@CrusaderMD" target="_blank">
+                <img src="./assets/yt_logo.png" alt="Logo do Youtube em amarelo">
+            </a>
+            <a class="logo__links__link" href="https://www.twitch.tv/crusader_mdbr" target="_blank">
+                <img src="./assets/twitch_logo.png" alt="Logo do Twitch em amarelo">
+            </a>
+            <a class="logo__links__link" href="https://www.instagram.com/luizr.bortolotti.jr" target="_blank">
+                <img src="./assets/insta_logo.png" alt="Logo do Instagram em amarelo">
+            </a>
+            <a class="logo__links__link" href="https://www.facebook.com/luizroberto.bortolottijunior" target="_blank">
+                <img src="./assets/face_logo.png" alt="logo do Facebook em amarelo">
+            </a>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p>&copy; <span id="ano"></span> Desenvolvido por Luiz R. Bortolotti Jr. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
